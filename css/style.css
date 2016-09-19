@@ -1,0 +1,422 @@
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(100,65,165,.8);
+	z-index: fixed;
+	z-index: 3;
+	opacity: 0.0;
+}
+.preimage {
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: url('../images/pre2.gif') no-repeat center;
+	border: none;
+	margin: -60px 0 0 -60px;
+	z-index: 5;
+}
+
+.preloader0 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(100,65,165,1.0);
+	z-index: fixed;
+	z-index: 3;
+}
+.preimage0 {
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: url('../images/pre2.gif') no-repeat center;
+	border: none;
+	margin: -60px 0 0 -60px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(100, 65, 165, 1.0);
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(145,139,145,1);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(145,139,145,1);
+	box-shadow: 0px 2px 5px 0px rgba(145,139,145,1);
+	width: auto;
+	height: 131px;
+	padding: 0 200px;
+}
+
+header .logo {
+	display: flex;
+	align-items: center;
+}
+
+header .logo a {
+	width: 250px;
+}
+
+header a img:nth-child(2) {
+	margin: 3px 0 0 65px;
+}
+
+.buttons {
+	margin-top: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: Oswald;
+}
+
+.buttons .btn-group {
+	margin-left: 6px;
+}
+
+.buttons button {
+	background: transparent;
+	width: 150px;
+}
+
+.buttons button:hover {
+	opacity: 0.85;
+}
+
+.descContainer .desc {
+	margin: 0 10%;
+	padding: 15px 0 15px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.descContainer .desc p {
+	color: rgba(10, 5, 6, 1.0);
+	font-family: Oswald;
+	font-size: 20px;
+	font-weight: 300;
+	margin: 0;
+}
+
+.descContainer .desc p:nth-child(2) {
+	font-weight: 400;
+	color: rgba(100,65,165,1.0);
+	margin: 0;
+	padding: 0;
+	font-variant: small-caps;
+}
+
+.streamerContainer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.streamerContainer .twitchStreamers {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 900px;
+}
+
+.streamerContainer h2 {
+	margin: 0;
+	padding: 17px 0 17px 70px;
+	font-family: Oswald;
+	color: white;
+	font-size: 36px;
+	font-weight: 700;
+	background-color: rgba(61, 83, 178, 1.0);
+}
+
+.streamerContainer ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.streamerContainer ul li {
+	margin-top: 1px;
+	width: 100%;
+	height: 80px;
+}
+
+.streamerContainer ul li .streamer {
+	display: flex;
+	align-items: center;
+	height:inherit;
+}
+
+.streamerOnline {
+	background-color: rgba(99,178,107,1.0);
+}
+
+.streamerOffline {
+	background-color: rgba(92,84,87,1.0);
+}
+
+.streamerContainer ul li .streamer .left-side {
+	width: 33%;
+	display: flex;
+	align-items: center;
+	font-family: Oswald;
+	font-weight: 400;
+	color: white;
+}
+
+.streamerContainer ul li .left-side .avatar {
+	width: 40%;
+}
+
+.streamerContainer ul li .streamer .left-side .avatar img {
+	max-width: 60px;
+	max-height: 60px;
+	border: 2px solid 
+}
+
+.streamerContainer ul li .left-side .nick {
+	width: 60%;
+	margin: 0 5px 0 0;
+	font-size: 16px;
+}
+
+.streamerContainer ul li .right-side{
+	width: 67%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.streamerContainer ul li .right-side .game {
+	color: white;
+	font-family: Merriweather;
+	font-weight: 400;
+	margin: 0 10px 0 5px;
+}
+
+.streamerContainer ul li .right-side .game:hover {
+	cursor: pointer;
+}
+
+.streamerContainer ul li .right-side a {
+	color: white;
+}
+
+li {
+	position: relative;
+}
+
+.streamerContainer ul li .close {
+	position: absolute;
+	color: white;
+    font-size: 20px;
+	right: 3px;
+}
+
+/* modal styles */
+.modal {
+    display: none;
+	justify-content: center;
+	text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0px;
+	opacity: 0.0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    top: -200px;
+    background-color: #fefefe;
+    width: 60%;
+	left: 20%;
+	right: 20%;
+	opacity: 0.0;
+	
+}
+
+/* The Close Button */
+.closeModal {
+	position: absolute;
+    color: white;
+    right: 0;
+	top: 0;
+    font-size: 28px;
+	transition: .2s;
+}
+
+.closeModal:hover {
+   cursor: pointer;
+   opacity: 0.7;
+}
+
+.modal-header {
+    padding:0;
+	margin: 0;
+    background-color: rgba(61, 83, 178, 1.0);
+    color: white;
+}
+
+.modal-body {
+	padding: 50px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.modal-footer {
+    padding: 0;
+    background-color: #rgba(61, 83, 178, 1.0);
+	display: flex;
+	justify-content: center;
+    color: rgba(92,84,87,1.0);
+}
+
+.modal .modal-content .modal-header h3 {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: Oswald;
+	font-size: 26px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 15px 0;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.input {
+	display: flex;
+	position: relative;
+}
+
+.input label {
+	position:absolute;
+	top: 8px;
+	margin-left: 0;
+	font-size:14px;
+	cursor:text;
+	transition:.2s ease-out;
+	-webkit-transition:.2s ease-out;-moz-transition:.2s ease-out;-o-transition:.2s ease-out;-ms-transition:.2s ease-out;
+	font-family: Oswald;
+	width: 100%;
+	left: 0;
+	text-align: left;
+	color: rgba(92,84,87,1.0);
+	font-weight: 700;
+}
+
+.input input {
+	font-family: Oswald;
+	border: 2px solid black;
+}
+
+.labelActive {
+	transform: translateY(-120%);
+	-webkit-transform:translateY(-120%);-moz-transform:translateY(-120%);-ms-transform:translateY(-120%);-o-transform:translateY(-120%);
+}
+
+.modal-body button {
+	font-family: Oswald;
+	background-color:rgba(61, 83, 178, 1.0);
+	border-color: rgba(61, 83, 178, 1.0);
+	transition:.2s;
+	-webkit-transition:.2s;-moz-transition:.2s;-o-transition:.2s;-ms-transition:.2s;
+}
+
+#myModal .modal-body button {
+	margin: 0 0 0 20px;
+}
+
+.modal-body button:hover,
+.modal-body button:focus {
+	color: rgba(61, 83, 178, 1.0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myModal2 .modal-body button {
+	width: 125px;
+}
+
+#myModal3 .modal-body {
+	flex-direction: column;
+	font-family: Oswald;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+#myModal3 .modal-footer p {
+	margin: 10px 10px;
+	font-family: Oswald;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+@media (max-width: 440px) {
+	header {
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+	}
+	
+	header .logo {
+		margin-top: 6px;
+	}
+}
+
+@media (max-width: 600px) {
+	.streamerContainer ul li {
+		height: auto;
+	}
+}
+
+@media (max-width: 920px) {
+	.streamerContainer .twitchStreamers {
+		width: 90%;
+		margin: 0 20px;
+	}
+	.streamerContainer ul li .streamer {
+		padding: 5px 20px;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.streamerContainer ul li .streamer .avatar {
+		display: none;
+		align-items: flex-end;
+	}
+	
+	.streamerContainer ul li .left-side .nick {
+		width: 100%;	
+	}
+	
+	.modal-content {
+		width: 80%;
+		left: 10%;
+		right: 10%;	
+	}
+}
+
+@media (max-width: 1120px) {
+	header {
+		padding: 0 15px;
+	}
+}

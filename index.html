@@ -1,0 +1,111 @@
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Twitch Streamers Monitor">
+<meta name="keywords" content="Twitch,Streamers,Monitor,Viewer,Rafal,Borek">
+<meta name="author" content="Rafał Borek">
+<title>Twitch Streamers Monitor</title>
+<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/mdb.min.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i|Signika:300,400" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="preloader0">
+		<div class="preimage0"></div>
+	</div>
+	<header>
+		<div class="logo">
+			<a href="https://borecki.github.io/twitch_streamers_monitor/">
+				<img src="images/twitch_header.png" alt="Twitch">
+				<img src="images/logo2.png" alt="Twitch">
+			</a>
+		</div>
+		<div class="buttons">
+			<div class="btn-group">
+				<button class="btn btn-white-outline personalize dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;PERSONALIZE&nbsp;&nbsp;<span class="caret"></span></button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#" id="myBtn">Add streamer</a></li>
+					<li><a href="#" id="visibility">Visibility</a></a></li>
+				</ul>
+			</div>
+			<button class="btn btn-white-outline learnMore" ><i class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Learn&nbsp;more&nbsp;&nbsp;</button>
+		</div>
+	</header>
+	<div class="descContainer">
+		<div class="desc">
+			<p>Status&nbsp;&nbsp;of&nbsp;&nbsp;your&nbsp;&nbsp;fovourites&nbsp;&nbsp;Twitch&nbsp; Streamers&nbsp;&nbsp;at&nbsp;&nbsp;one&nbsp;&nbsp;place.</p>
+			<p>click on the streamer's status to move to his trasmission</p>
+		</div>
+	</div>
+	<div class="streamerContainer">
+		<div class="twitchStreamers">
+			<h2>TWITCH STREAMERS</h2>
+			<ul class="streamersList" id="sortable">
+			</ul>
+		</div>
+	</div>	
+		
+	<!-- Modal 1 content -->
+	<div id="myModal" class="modal n1">
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="closeModal"><i class="fa fa-times" aria-hidden="true"></i></span>
+				<h3>Add streamer</h3>
+			</div>
+			<div class="modal-body">
+				<div class="input">		
+					<input type="text" id="form">
+					<label for="form" class="lbl">Twitch streamer's nick</label>
+				</div>
+				<button class="btn btn-white-outline addStreamer">ADD</button>
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>
+	</div>
+	<!-- End of modal 1 -->
+		
+	<!-- Modal 2 content -->
+	<div id="myModal2" class="modal n2">
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="closeModal"><i class="fa fa-times" aria-hidden="true"></i></span>
+				<h3>Visibility</h3>
+			</div>
+			<div class="modal-body">
+				<button class="btn btn-white-outline onlineActions">HIDE online</button>
+				<button class="btn btn-white-outline offlineActions">HIDE offline</button>
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>
+	</div>
+	<!-- End of modal 2 -->
+		
+	<!-- Modal 3 content -->
+	<div id="myModal3" class="modal n3">
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="closeModal"><i class="fa fa-times" aria-hidden="true"></i></span>
+				<h3>About</h3>
+			</div>
+			<div class="modal-body">
+				<p>This project is one of the Intermediate Front-End Development Project tasks in the Free Code Camp Course.</p>
+				<p>Informations about added or removed streamers are store until you remove your browser history</p>
+			</div>
+			<div class="modal-footer">
+				<p>©&nbsp;&nbsp;&nbsp;2016&nbsp;&nbsp; Code&nbsp;by&nbsp;Rafał&nbsp;Borek</p>
+			</div>
+		</div>
+	</div>
+	<!-- End of modal 3 -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="sctipts.js"></script>
+<script type="text/javascript" src="jquerylibs/mdb.min.js"></script>
+</body>
+</html>
