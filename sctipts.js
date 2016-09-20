@@ -2,7 +2,6 @@ if(localStorage.getItem("str") == null ) {
 	var streamers = ["esl_sc2", "freecodecamp", "ogamingsc2"];
 	localStorage.setItem("str", streamers);
 	streamers = localStorage.getItem("str").split(",");
-	console.log(streamers);
 } else if(!jQuery.isEmptyObject(localStorage.getItem("str"))) {
 	var streamers = localStorage.getItem("str").split(",");
 }
@@ -25,7 +24,6 @@ function updateStreamersList(nick_value) {
 		var addToArray = localStorage.getItem("str").split(",");
 		addToArray.push(nick_value);
 		localStorage.setItem("str", addToArray);
-		console.log(localStorage.getItem("str"));
 	}
 }
 
@@ -130,7 +128,6 @@ function addStreamerAction() {
 		preLoader.append(preImage);
 		preLoader.appendTo($('body'));
 		preLoader.animate({"opacity": "1."}, "slow");
-		console.log("przekazuje nick do funkcji dodawania"+$(".input input").val().toLowerCase());
 		updateStreamersList($(".input input").val().toLowerCase());
 		getStreamerData($(".input input").val());
 	}	
